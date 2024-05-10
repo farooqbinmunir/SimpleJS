@@ -1,0 +1,27 @@
+/* SimpleJS @ v1, author @ Farooq Bin Munir */
+const   d = document, c = console, M = Math,
+		qs = (s, a=false) => a ? d.querySelectorAll(s) : d.querySelector(s),
+		byId = id => d.getElementById(id),
+		byClass = cls => d.getElementsByClassName(cls),
+		byTag = t => d.getElementsByTagName(t),
+		ac = (cls, e) => e.classList.add(cls),
+		rc = (cls, e) => e.classList.remove(cls),
+		floor = n => M.floor(n),
+		ceil = n => M.ceil(n),
+		round = n => M.round(n),
+		sqrt = n => M.sqrt(n),
+		abs = n => M.abs(n),
+		exp = n => M.exp(n),
+		sin = n => M.sin(n),
+		cos = n => M.cos(n),
+		tan = n => M.tan(n),
+		pow = (a,b) => M.pow(a,b),
+		log = n => M.log(n),
+		rand = n => n ? round(M.random() * n) : M.random(),
+		min = aons => M.min.apply(null, aons),
+		max = aons => M.max.apply(null, aons),
+		cl = (...args) => c.log(...args),
+		write = t => d.write(t),
+		tof = o => typeof(o);
+
+
